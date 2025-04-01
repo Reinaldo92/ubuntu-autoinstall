@@ -1,0 +1,30 @@
+alias rync='rsync -avhrPt '
+
+alias dmp3-list="youtube-dl -x --audio-format  mp3 --embed-thumbnail --audio-quality 9 --add-metadata  -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --download-archive playlist.txt"
+alias dmp3="youtube-dl -x --audio-format  mp3 --embed-thumbnail --audio-quality 9 --add-metadata"
+alias ytdl="youtube-dl -f 'best[height=720]bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'"
+alias ytdlf="youtube-dl -f 'best[height=720]bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --download-archive playlist.txt"
+
+alias pas='php artisan serve'
+alias psw='php -S localhost:3030'
+alias fblade='blade-formatter --write resources/**/*.blade.php'
+alias cspsr2='php-cs-fixer fix --level=psr2'
+alias cspsr12='php-cs-fixer fix --level=psr12'
+alias psr12f='phpcbf -w --standard=PSR12'
+alias psr12='phpcs -w --standard=PSR12'
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias artisan='php artisan'
+
+alias cp="cp -vir"
+alias df="df -h"
+alias diff="diff $COLOR_AUTO"
+
+alias bat="batcat"
+alias rank='sort | uniq -c | sort -nr'
+
+alias ls="ls -h $COLOR_AUTO --group-directories-first --sort=extension"
+alias l="ls -CFh"
+alias la="ls -a | egrep \"^\.\""
+
+alias wifi_sinal='nmcli device wifi'
+alias wls="watch -n 1 lsof -i"

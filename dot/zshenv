@@ -1,0 +1,30 @@
+export PATH="$HOME/.local/bin:$PATH"
+
+. "$HOME/.local/opt/cargo/env"
+export PATH="$HOME/.local/opt/cargo/bin:$PATH"
+
+export PATH="$HOME/.local/opt/composer/vendor/bin:$PATH"
+
+export PATH="$HOME/.local/opt/pyenv/bin:$PATH"
+export PATH="$HOME/.local/opt/pyenv/shims:$PATH"
+export PATH="$HOME/.local/opt/pyenv/plugins/pyenv-virtualenv/shims:$PATH"
+export PATH="$HOME/.local/opt/pyenv/plugins/pyenv-virtualenv/bin:$PATH"
+export PATH="$HOME/.local/opt/pyenv/plugins/pyenv-update/bin:$PATH"
+export PATH="$HOME/.local/opt/pyenv/plugins/pyenv-which-ext/bin:$PATH"
+export PATH="$HOME/.local/opt/pyenv/plugins/pyenv-aliases/bin:$PATH"
+export PATH="$HOME/.local/opt/pyenv/plugins/pyenv-update/bin:$PATH"
+
+export PATH="$HOME/.local/opt/node/bin:$PATH"
+export PATH="$HOME/.local/opt/node/npm/bin:$PATH"
+
+export PATH="$HOME/.local/opt/sdkman/bin:$PATH"
+export PATH="$HOME/.local/opt/sdkman/candidates/java/current/bin:$PATH"
+export PATH="$HOME/.local/opt/sdkman/candidates/maven/current/bin:$PATH"
+export PATH="$HOME/.local/opt/sdkman/candidates/gradle/current/bin:$PATH"
+export PATH="$HOME/.local/opt/sdkman/candidates/groovy/current/bin:$PATH"
+export PATH="$HOME/.local/opt/sdkman/candidates/kotlin/current/bin:$PATH"
+export PATH="$HOME/.local/opt/sdkman/candidates/sbt/current/bin:$PATH"
+export PATH="$HOME/.local/opt/sdkman/candidates/springboot/current/bin:$PATH"
+export PATH="$HOME/.local/opt/sdkman/candidates/scala/current/bin:$PATH"
+
+source <(ng completion script)

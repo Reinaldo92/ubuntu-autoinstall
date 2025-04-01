@@ -1,0 +1,44 @@
+[user]
+	name = Reinaldo Jr
+	email = reinaldo.santos0692@gmail.com
+
+[color]
+	interactive = true
+	branch = true
+	status = true
+	ui = true
+
+[core]
+	editor = nvim
+	autocrlf = input
+	excludesfile = /home/reinaldo/.config/git/ignore
+
+[init]
+	defaultBranch = main
+
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	df = diff
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	co = checkout
+	pom = pull origin master
+	ps = push
+	pl = pull
+    summary = !git-stat-sum \"$@\"
+    lol = log --graph --pretty=format:'%C(auto)%h%d%Creset %C(cyan)(%cr)%Creset %C(green)%cn <%ce>%Creset %s'
+    lol  = log --graph --pretty=format:\"%C(auto)%h%d%Creset %C(cyan)(%cr)%Creset %C(green)%cn <%ce>%Creset %s\"
+    lold = log --graph --pretty=format:\"%C(auto)%h%d%Creset %C(cyan)(%ci)%Creset %C(green)%cn <%ce>%Creset %s\"
+    lol2 = log --oneline --graph --decorate
+    lol3 = log --all --graph --decorate --oneline --simplify-by-decoration
+    glog = git log --numstat --format="" "$@" | awk '{files += 1}{ins += $1}{del += $2} END{print "total: "files" files, "ins" insertions(+) "del" deletions(-)"}'
+
+[pull]
+	ff = only
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

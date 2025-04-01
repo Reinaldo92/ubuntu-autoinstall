@@ -1,0 +1,12 @@
+{
+    "tabnine.experimentalAutoImports": true,
+    "workbench.startupEditor": "none",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.colorTheme": "GitHub Dark",
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "toggle",
+    "window.customTitleBarVisibility": "never",
+    "explorer.confirmDelete": false,
+    "security.workspace.trust.untrustedFiles": "open"
+}
